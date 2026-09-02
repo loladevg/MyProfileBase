@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        a   {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        li  {
+            font-size: 18px;
+            font-weight: 400;
+        }  
+        h5  {
+            font-size: 25px;
+            font-weight: 500;
+            font-size: 1.5em;
+        }
+        p   {
+            font-size: 12px;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+
+        .bg1    {
+            background-color: rgb(9, 90, 9);
+        }
+        .bg2    {
+            background-image: url("https://aisiki.netlify.app/assets/img/home/linear_green_bg.svg");
+            background-image: linear-gradient(180deg, rgb(0, 78, 0), rgb(0, 0, 0));
+            transition-property: opacity,transform;
+        }
+        .bg3    {
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 64px;
+            border-radius: 12px;
+        }
+        .bg4    {
+            background-color: rgb(0, 0, 0);
+        }
+        .bg5    {
+            background-image: url("Aisiki-Images/dotted-surface.svg");
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 7px 64px;
+        }
+        .link1  {
+            background-color: rgb(9, 90, 9);
+        }
+        .link1:hover    {
+            background-color: rgb(122, 200, 2);
+        }
+        .link2  {
+            background-color: rgb(122, 200, 2);
+        }
+        .link3  {
+            background-color: rgb(122, 200, 2);
+        }
+        .img1   {
+            height: 80px;
+            width: 80px;
+        }
+        .img2   {
+            height: 200px;
+            width: 150px;
+        }
+        .img3   {
+            height: 100%;
+            width: 100%;
+        }
+        .img4   {
+            height: 26px;
+            width: 30px;
+        }
+        .div1>p {
+            font-size: 1rem;
+        }
+        .div2>a>p   {
+            font-size: 1rem;
+            color: rgb(225, 225, 225);
+        }
+        .div2>a>p:hover {
+            font-size: 1rem;
+            color: rgb(255, 244, 114);
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky-top justify-content-between text-center navbar navbar-expand-sm p-5 bg1">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="https://aisiki.netlify.app/index.html">
+                    <img src="Aisiki-Images/aisiki-logo.svg" alt="aisiki"/>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="float-end justify-content-center offcanvas offcanvas-start" id="collapsibleNavbar">
+                <ul class="navbar-nav offcanvas-body ms-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" aria-current="page" href="https://aisiki.netlify.app/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://aisiki.netlify.app/views/about.html">Abut Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://aisiki.netlify.app/views/business.html">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://aisiki.netlify.app/views/farmers.html">Farmer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://aisiki.netlify.app/views/support.html">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://myaisiki.medium.com/">Blog</a>
+                    </li>
+                    <li class="nav-item ms-5 mt-2">
+                        <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link1" href="https://api.whatsapp.com/send?phone=2348139444430">Buy From Asiki</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg1">
+        <div class="container ms-5 px-5 pt-4 pb-5">
+            <div class="row">
+                <div class="col-md-5 me-5">
+                    <h1 class="mb-4 text-light">We're building a tech-enabled infrastructure for food supply in Africa</h1>
+                    <h5 class="text-warning mt-3">Aisiki sources food items directly from farmers and processors and sells to restaurants and retailers leveraging its connected and lean logistics.</h5>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <a class="text-light d-flex align-items-center" href="https://aisiki.netlify.app/#watch-video">
+                                <img class="img1" src="Aisiki-Images/play-button.svg" alt=""/>
+                                <h5 class="mt-3">Watch Again</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link2" href="https://api.whatsapp.com/send?phone=2348139444430">Buy From Asiki</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ms-5">
+                    <img src="Aisiki-Images/dashed_rounded.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img class="ms-4" src="Aisiki-Images/rectangle-dash.png"/>
+            <div class="row ms-3">
+                <div class="col-md-3">
+                    <h5>Aisiki key figures</h5>
+                </div>
+                <div class="col-md-8">
+                    <ul class="text-center ms-5 mb-5 text-decoration-none list-unstyled justify-content-center d-flex flex-row"> 
+                        <li class="me-3 ms-3">
+                            <h2>300+</h2>
+                            <h6>Farmers, processors and distributors </h6>
+                        </li>
+                        <li class="me-3 ms-3">
+                            <h2>1000+</h2>
+                            <h6>Grocery shops, Restuarants and Retail stores </h6>
+                        </li>
+                        <li class="me-3 ms-3">
+                            <h2>100+</h2>
+                            <h6>Monthly tonnage of fresh fruits, vegetables and staples </h6>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg2 pb-5">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-6 p-5 mt-5">
+                    <h1 class="mb-3 mt-5 text-light">We are building the API for food </h1>
+                    <p class="mb-5 text-light">We leverage cutting-edge technologies to supply straight-from-the-farm food produce from farms to businesses in cities in 24 hours or less. </p>
+                    <div class="mt-4">
+                        <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link2" href="https://api.whatsapp.com/send?phone=2348139444430">Build with us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <img class="" src="Aisiki-Images/portrait-man.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center pt-5 pb-5 text-light">
+            <h1 class="text-light">
+                <img src="Aisiki-Images/aisiki-logo-color.png"/>  is the future of food distribution in Africa
+            </h1>
+            <p class="pb-3 text-light"> We are transforming how food moves from farm to fork. Our goal is to make quality food accessible at affordable prices with key stakeholders benefiting fully. </p>
+        </div>
+        <div class="bg3">
+            <div class="container">
+                <ul class="m-5 text-center text-decoration-none list-unstyled justify-content-center d-flex flex-row">
+                    <li class="ms-3 me-3">
+                        <img class="img2" src="Aisiki-Images/farmers.png"/>
+                        <p class="mt-3 text-light">Farmers</p>
+                    </li>
+                    <img src="Aisiki-Images/chevrons-right.svg"/>
+                    <li class="ms-3 me-3">
+                        <img class="img2" src="Aisiki-Images/collection-center.png"/>
+                        <p class="mt-3 text-light">Collection Centers</p>
+                    </li>
+                    <img src="Aisiki-Images/chevrons-right.svg"/>
+                    <li class="ms-3 me-3">
+                        <img class="img2" src="Aisiki-Images/fulfill-center.png"/>
+                        <p class="mt-3 text-light">Fulfillment Centers</p>
+                    </li>
+                    <img src="Aisiki-Images/chevrons-right.svg"/>
+                    <li class="ms-3 me-3">
+                        <img class="img2" src="Aisiki-Images/distribute-center.png"/>
+                        <p class="mt-3 text-light">Distribution Centers</p>
+                    </li>
+                    <img src="Aisiki-Images/chevrons-right.svg"/>
+                    <li class="ms-3 me-3">
+                        <img class="img2" src="Aisiki-Images/retaillers.png"/>
+                        <p class="mt-3 text-light">Retailers</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-5 mt-5">
+                    <h4 class="pt-5 text-light">Great for Farmers</h4>
+                    <p class="text-light">Our farmers enjoy as much as 20% increase in net earnings with other benefits. </p>
+                    <div class="row">
+                        <div class="mt-4">
+                            <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link2" href="https://api.whatsapp.com/send?phone=2348139444430">Sell to Aisiki</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img class="img3" src="Aisiki-Images/country-side-women.png"/>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-md-6 mt-5">
+                    <img class="img3" src="Aisiki-Images/various-fruits-local-african-market1.png"/>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <h4 class="pt-5 text-light">Amazing for Businesses</h4>
+                    <p class="text-light">Save at least 10% on high quality food items when you buy from us. We also deliver for free in some cities too. </p>
+                    <div class="row">
+                        <div class="mt-4">
+                            <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link2" href="https://api.whatsapp.com/send?phone=2348139444430">Buy from Aisiki</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-5">
+                <div class="col-md-6 mt-5">
+                    <h4 class="pt-5 text-light">For Consumers</h4>
+                    <p class="text-light"> You can now simply get quality food items at unbeatable prices from food vendors on Aisiki. </p>
+                    <div class="row">
+                        <div class="mt-4">
+                            <a class="list-unstyled text-decoration-none text-light border border-muted rounded p-3 link2" href="https://api.whatsapp.com/send?phone=2348139444430">Let's Talk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <img class="img3" src="Aisiki-Images/beautiful-young-black-woman-smiling-supermarket1.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg4">
+        <div class="container justify-content-center rounded pt-5">
+            <div class="bg5 row pt-5">
+                <div class="ms-5 col-md-5">
+                    <img class="" src="Aisiki-Images/aisiki-mobile.svg"/>
+                </div>
+                <div class="col-md-6 mt-5 text-light">
+                    <h1>Order. Pay. Delivered!</h1>
+                    <p class="text-light">Start ordering now using our mobile app. </p>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <a href="https://play.google.com/store/apps/details?id=com.hipheckt.aisikiorderingapp">
+                                <img src="Aisiki-Images/google-play.svg"/>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="https://apps.apple.com/gb/app/aisiki-ordering-app/id1566762319?ign-mpt=uo%3D2">
+                                <img src="Aisiki-Images/app-store.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg1">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="Aisiki-Images/aisiki-logo.svg"/>
+                    <div class="row">
+                        <div class="col-md-3 mt-4 text-light div1">
+                            <p>SmartAgro Technologies Ltd</p>
+                            <p>100, Textile Mill Road</p>
+                            <p>Benin City, Nigeria</p>
+                            <p>info@aisiki.co </p>
+                        </div>
+                        <div class="div2 mt-4 col-md-3">
+                            <a href="https://aisiki.netlify.app/views/privacy_policy.html">
+                                <p>Privacy Policy</p>
+                            </a>
+                            <a href="https://aisiki.netlify.app/views/terms_of_use.html">
+                                <p>Terms of Use</p>
+                            </a>
+                            <a href="https://aisiki.netlify.app/views/returns_and_refunds.html">
+                                <p>Returns & Funds</p>
+                            </a>
+                            <a href="https://aisiki.netlify.app/views/contact_us.html">
+                                <p>Contact Us</p>
+                            </a>    
+                        </div>
+                        <div class="div2 mt-4 col-md-3">
+                            <a href="https://aisiki.netlify.app/views/about.html">
+                                <p>About Us</p>
+                            </a>
+                            <a href="https://aisiki.netlify.app/views/support.html">
+                                <p>Support</p>
+                            </a>
+                            <a href="https://myaisiki.medium.com/">
+                                <p>Blog</p>
+                            </a>
+                            <a href="https://aisiki.netlify.app/views/careers.html">
+                                <p>Careers</p>
+                            </a>    
+                        </div>
+                        <div class="col-md-3">
+                            <form></form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-warning">Never miss an update</h4>
+                    <div class="row">
+                        <div class="col-md-9 mt-3">
+                            <form action="/action_page.php">
+                                <div class="mt-3">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>    
+                            </form>
+                        </div>
+                        <button class="col-md-3 mt-3 pt-4 rounded link3">
+                            <img class="mb-4" src="Aisiki-Images/circle-arrow-right.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="div1 col-md-6">
+                    <p class="text-light">Copyright 2023 SmartAgro Technologies Limited.</p>
+                    <p class="text-light">All rights reserved. </p>
+                </div>
+                <div class="div1 col-md-6 d-flex justify-content-sm-end align-items-center">
+                    <p class="text-light">Follow us: 
+                        <div class="row p-2">
+                            <a class="col-md-2" href="https://www.facebook.com/myaisiki">
+                                <img class="img4" src="Aisiki-Images/facebook.png"/>
+                            </a>
+                            <a class="col-md-2" href="https://www.linkedin.com/company/myaisiki">
+                                <img class="img4" src="Aisiki-Images/linkedin.png"/>
+                            </a>
+                            <a class="col-md-2" href="https://www.twitter.com/myaisiki">
+                                <img class="img4" src="Aisiki-Images/twitter.png"/>
+                            </a>
+                            <a class="col-md-2" href="https://www.instagram.com/myaisiki">
+                                <img class="img4" src="Aisiki-Images/instagram.png"/>
+                            </a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
